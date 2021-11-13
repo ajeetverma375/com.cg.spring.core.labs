@@ -1,9 +1,9 @@
 package com_cg_spring_core_demo.com.cg.spring.core.labs.model;
 
 public class Employee {
-	private int employeeId;
-	private String employeeName;
-	private double salary;
+	private int employeeId;                //1.3
+	private String employeeName;          //1.3
+	private double salary;               //1.3
 	private String businessUnit;
 	private int age;
 

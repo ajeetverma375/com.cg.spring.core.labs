@@ -24,11 +24,23 @@
 				<property name="age">			      <value>34</value>		    </property>
 		<property name="sbu" >
 			<bean  class="com_cg_spring_core_demo.com.cg.spring.core.labs.model.SBU">
-				<property name="sbcode">			   <value>123</value>		                    </property>
-				<property name="sbuName">			   <value>Product Engineering Services</value>		</property>
-				<property name="sbuHead">		       <value>Kiran Roa</value>		                    </property>
+				<property name="sbcode" value="123"	/>          
+				<property name="sbuName" value="Product Engineering Services" />
+				<property name="sbuHead" value="Kiran Rao" />
 			</bean>
 		</property>
 	</bean>
+	
+	<bean id="sbu" class="com_cg_spring_core_demo.com.cg.spring.core.labs.model.SBU">
+				<property name="sbcode"    value="123"	/>          
+				<property name="sbuName"   value="Product Engineering Services" />
+				<property name="sbuHead"   value="Kiran Rao" />
+			   <property   name="empList">
+			   <List>
+			   value
+			   </List>
+			   </property>
+			</bean>
+	
 	 
 </beans>

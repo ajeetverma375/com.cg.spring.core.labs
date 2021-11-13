@@ -21,9 +21,15 @@ public class App
         System.out.println("Problem statement-1.1");
         Employee emp=ctx.getBean("employee",Employee.class);  
     	emp.displayEmployeeDetails();
+    	
     	 System.out.println("\nProblem statement-1.2");
         Employee emp1=ctx.getBean("employee1",Employee.class);  
     	System.out.println(emp1.toString());
+    	
+    	SBU sbu=ctx.getBean("sbu",SBU.class);
+    	sbu.display();
+    	
+    	
 //    	SBU sbu=ctx.getBean("sbu",SBU.class);  
 //     	System.out.println(sbu.toString());
     	((AbstractApplicationContext)ctx).close();
