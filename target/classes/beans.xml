@@ -1,0 +1,34 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	<!-- Dependency injection -->
+	<!-- Property injection / setter injection -->
+
+
+	<bean id="employee" class="com_cg_spring_core_demo.com.cg.spring.core.labs.model.Employee">
+				<property name="employeeId">		  <value>101</value>		</property>
+				<property name="employeeName">	      <value>Sonu</value>		</property>
+				<property name="salary">			  <value>10.6</value>		</property>
+				<property name="businessUnit">		  <value>PES-BU</value>		</property>
+				<property name="age">			      <value>34</value>		    </property>
+   </bean>
+
+
+
+	<bean id="employee1" class="com_cg_spring_core_demo.com.cg.spring.core.labs.model.Employee">
+				<property name="employeeId">		  <value>101</value>		</property>
+				<property name="employeeName">	      <value>Sonu</value>		</property>
+				<property name="salary">			  <value>10.6</value>		</property>
+				<property name="businessUnit">		  <value>PES-BU</value>		</property>
+				<property name="age">			      <value>34</value>		    </property>
+		<property name="sbu" >
+			<bean  class="com_cg_spring_core_demo.com.cg.spring.core.labs.model.SBU">
+				<property name="sbcode">			   <value>123</value>		                    </property>
+				<property name="sbuName">			   <value>Product Engineering Services</value>		</property>
+				<property name="sbuHead">		       <value>Kiran Roa</value>		                    </property>
+			</bean>
+		</property>
+	</bean>
+	 
+</beans>
